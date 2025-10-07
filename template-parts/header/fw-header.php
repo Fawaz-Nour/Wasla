@@ -12,7 +12,7 @@
     ?>
 
 	<!-- Top Banner -->
-	<div class="fw-top-banner d-flex justify-content-between align-items-center px-3 py-2">
+	<div class="fw-top-banner d-flex justify-content-between align-items-center px-3 py-1">
 		<div class="fw-contact-info">
             <?php if ( $email ) : ?>
                 <a href="mailto:<?php echo esc_attr($email); ?>" class="fw-email">
@@ -67,11 +67,14 @@
                 ) );
                 ?>
 			</div>
-			<div class="d-none d-lg-inline">
-			    <a class="fw-contact-btn" href="<?php echo esc_url( home_url('/contact-us') ); ?>">
-			        <?php _e( 'استشارة مجانية', 'wasla' ); ?>
-			    </a>
-			</div>
+            <div class="auth-buttons">
+                <a class="btn fw-btn btn-out" href="<?php echo esc_url( wp_login_url() ); ?>">
+                    <?php _e( 'تسجيل الدخول', 'wasla' ); ?>
+                </a>
+                <a class="btn fw-btn btn-main" href="<?php echo esc_url( wp_registration_url() ); ?>">
+                    <?php _e( 'إنشاء حساب', 'wasla' ); ?>
+                </a>
+            </div>
 		</div>
 	</nav>
 </header>
