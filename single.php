@@ -17,7 +17,7 @@ if ( have_posts() ) :
             </div>
             <div class="col-lg-4 text-sub">
                 <?php the_title( '<h1>','</h1>'); ?>
-                <p class="text-white mt-4"><?php echo get_the_excerpt(); ?></p>
+                <p class=" mt-4"><?php echo get_the_excerpt(); ?></p>
             </div>
         </div>
         <div class="row singil">
@@ -27,8 +27,8 @@ if ( have_posts() ) :
                 </div>
             </div>
             <div class="col-3">
-                 <div class="form">
-                    <iframe data-form-title="app.htm" height="500" style="border: none; width: 100%" src='https://atiraspace.com/api/form/67fe277b26e41e393c74a949/generate'></iframe>
+                 <div class="form bg-white rounded-3 s">
+                    <iframe data-form-title="form" height="400" style="border: none; width: 100%" src='https://atiraspace.com/api/form/68e69a2ac1ec9ad7e74fb693/generate'></iframe>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@ if ( have_posts() ) :
 <?php 
     endwhile;
 else :
-    _e( 'Sorry, no pages matched your criteria.', 'fawaz' ); 
+    _e( 'عذرا، لا توجد صفحات تطابق معاييرك.', 'fawaz' ); 
 endif;
 get_footer();
 ?>

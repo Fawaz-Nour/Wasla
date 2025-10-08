@@ -10,6 +10,6 @@ if ( have_posts() ) {
         the_content();
     }
 } else {
-    _e( 'Sorry, no pages matched your criteria.', 'fawaz' ); 
+    _e( 'عذرا، لا توجد صفحات تطابق معاييرك.', 'fawaz' ); 
 }
 get_footer();

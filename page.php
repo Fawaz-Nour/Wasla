@@ -15,7 +15,7 @@ if ( have_posts() ) :
 <?php 
     endwhile;
 else :
-    _e( 'Sorry, no pages matched your criteria.', 'fawaz' ); 
+    _e( 'عذرا، لا توجد صفحات تطابق معاييرك.', 'fawaz' ); 
 endif;
 get_footer();
 ?>
