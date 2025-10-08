@@ -7,12 +7,8 @@ get_header();
 
 <!--Main-->
 <main>
-    <!-- Hero -->
-    <section class="fw-hero" id="fw-home">
-        <?php get_template_part('template-parts/home/fw-hero') ?>
-    </section>
-    <!-- /Hero -->
-
+    <?php get_template_part('template-parts/home/fw-hero') ?>
+    <?php get_template_part('template-parts/home/fw-how') ?>
 </main>
 <!--/Main-->
 

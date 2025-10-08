@@ -7,7 +7,7 @@ get_header();
 <main>
      <section>
         <div class="container mt-4">
-            <h1 class="text-center mb-4 text-sub">Blog Archive</h1>
+            <h1 class="text-center mb-4 text-sub">المدونة</h1>
             
             <div class="row">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -21,12 +21,12 @@ get_header();
                             <div class="card-body">
                                 <?php the_title( '<h5>', '</h5>' ); ?>
                                 <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?></p>
-                                <a href="<?php the_permalink(); ?>" class="btn btn-main rounded-pill py-1 px-4">Read More</a>
+                                <a href="<?php the_permalink(); ?>" class="btn btn-main rounded-pill py-1 px-4">اقرأ المزيد</a>
                             </div>
                         </div>
                     </div>
                 <?php endwhile; else : ?>
-                    <p class="text-center">Sorry, no posts available at the moment.</p>
+                    <p class="text-center">عذراً، لا توجد مشاركات متاحة في الوقت الحالي.</p>
                 <?php endif; ?>
             </div>
         
@@ -34,8 +34,8 @@ get_header();
                 <?php 
                 the_posts_pagination(array(
                     'mid_size'  => 3,
-                    'prev_text' => __('« Previous', 'fawaz'),
-                    'next_text' => __('Next »', 'fawaz'),
+                    'prev_text' => __('« Previous', 'wasla'),
+                    'next_text' => __('Next »', 'wasla'),
                 ));
                 ?>
             </div>
