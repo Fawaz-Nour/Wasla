@@ -9,7 +9,7 @@
     --fw-dark-blue: #4682B4;
     --fw-text-gray: #4A5568;
     --fw-heading-dark: #1A202C;
-    --fw-bg-light: #F8FAFB;
+    --fw-bg-light: #f8fdff;
 
     /* Font Variables */
     --font-family: 'Cairo', sans-serif;
@@ -160,6 +160,7 @@ header {
 /* Hero Section */
 .fw-hero {
     padding: 5rem 2rem;
+	background-color: #ffffff;
 }
 
 .hero-content h1 {
