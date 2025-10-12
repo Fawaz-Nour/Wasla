@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row gy-4">
         <!-- Logo & About -->
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="100">
             <div class="fw-footer-brand pb-lg-0 pb-3">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo-w.png" alt="<?php esc_attr_e('وصلة','wasla'); ?>" class="mb-3">
                 <p class="fw-footer-text">
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Quick Links -->
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="fw-footer-links">
                 <h5 class="fw-bold mb-3"><?php _e('روابط سريعة','wasla'); ?></h5>
                 <?php
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Useful Links -->
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="fw-footer-links">
                 <h5 class="fw-bold mb-3"><?php _e('روابط مفيدة','wasla'); ?></h5>
                 <?php
@@ -57,7 +57,7 @@
         </div>
 
         <!-- Social Media -->
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="fw-footer-social">
                 <h5 class="fw-bold mb-3"><?php _e('تواصل معنا','wasla'); ?></h5>
 
@@ -105,7 +105,7 @@
     </div>
     
     <!-- Footer Main Menu -->
-    <div class="text-center mt-3">
+    <div class="text-center mt-3" data-aos="fade-up" data-aos-delay="600">
     <?php
 	wp_nav_menu(array(
 		'theme_location' => 'foot-menu',

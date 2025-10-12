@@ -1,5 +1,5 @@
 <div class="col-lg-4 col-12 mb-5">
-    <div class="card fw-card h-100 m-auto" style="max-width:440px;">
+    <div class="card fw-card h-100 m-auto" style="max-width:440px;" data-aos="fade-up" data-aos-delay="100">
         <div class="fw-head">
             <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">

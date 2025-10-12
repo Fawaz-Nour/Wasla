@@ -1,14 +1,14 @@
 <!-- How Section -->
 <section class="fw-how py-5">
     <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5" data-aos="fade-up">
             <h2 class="fw-how-titl mb-3"><?php echo __('كيف تعمل المنصة'); ?></h2>
             <p class="fw-how-txt"><?php echo __('ابدأ بخطوات بسيطة وسريعة'); ?></p>
         </div>
 
         <div class="row g-4 justify-content-center">
             <!-- Step 1 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="fw-step-card">
                     <div class="step-number">1</div>
                     <div class="icon-wrapper">
@@ -20,7 +20,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="fw-step-card">
                     <div class="step-number">2</div>
                     <div class="icon-wrapper">
@@ -32,7 +32,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="fw-step-card">
                     <div class="step-number">3</div>
                     <div class="icon-wrapper">
@@ -44,7 +44,7 @@
             </div>
 
             <!-- Step 4 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="700">
                 <div class="fw-step-card">
                     <div class="step-number">4</div>
                     <div class="icon-wrapper">
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 text-center">
+        <div class="mt-5 text-center" data-aos="fade-up" data-aos-delay="1000">
             <a href="./" class="btn fw-btn btn-main btn-lg">سجل الآن</a>
         </div>
     </div>
