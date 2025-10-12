@@ -57,6 +57,7 @@
 body {font-family: var(--font-family); text-align: right; background: var(--fw-bg-light); color: var(--fw-text-gray); line-height: 1.6;}
 ul {list-style: none;}
 a {text-decoration: none;}
+footer a {color: #ffffff;}
 img {max-width: 100%; height: auto;}
 .main {overflow: hidden;}
 
@@ -471,9 +472,9 @@ header {
 	padding-top: 4rem;
 	padding-bottom: 2rem;
 	color: #fff;
-	border-top: solid 5px #F4C542;
+	border-top: solid 5px #10B981;
 	background: 
-	linear-gradient(135deg, #5BA88E, #0e775d);
+	linear-gradient(135deg, #63a3d6, #413acc);
 }
 
 .fw-footer .container {
@@ -483,11 +484,10 @@ header {
 
 /* Footer Brand Section */
 .fw-footer-brand img {
-	width: 80px;
-	height: 80px;
+	max-width: 250px;
 	object-fit: contain;
 	filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
-	transition: transform 0.3s ease;
+	transition: transform var(--transition-fast);
 }
 
 .fw-footer-brand img:hover {
@@ -499,22 +499,6 @@ header {
 	line-height: 1.8;
 	color: rgba(255, 255, 255, 0.85);
 	margin-bottom: 1rem;
-}
-
-.fw-footer-brand .fw-btn-footer {
-	background: linear-gradient(135deg, var(--fw-sub, #ffc107), #ffb300);
-	border: none;
-	padding: 10px 28px;
-	border-radius: 30px;
-	font-weight: 700;
-	color: #fff;
-	transition: all 0.3s ease;
-	box-shadow: 0 4px 12px rgba(70, 70, 70, 0.25);
-}
-
-.fw-footer-brand .fw-btn-footer:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 6px 18px rgba(30, 30, 30, 0.35);
 }
 
 /* Footer Links Sections */
@@ -587,10 +571,10 @@ header {
 }
 
 .fw-footer-social .list-inline-item a:hover {
-	background: var(--fw-sub, #ffc107);
+	background: var(--fw-sub);
 	color: var(--fw-dark-green, #0a4d3c);
 	transform: translateY(-4px);
-	box-shadow: 0 6px 16px rgba(255, 193, 7, 0.35);
+	box-shadow: 0 6px 16px rgba(82, 250, 138, 0.35);
 }
 
 .fw-footer .text-center ul {
@@ -617,9 +601,9 @@ header {
 }
 
 .fw-footer .text-center ul li a:hover {
-    background: var(--fw-sub, #ffc107);
+    background: var(--fw-sub);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.25);
+    box-shadow: 0 4px 12px rgba(65, 255, 166, 0.25);
 }
 
 @media (max-width: 991px) {

@@ -13,13 +13,12 @@
         <!-- Logo & About -->
         <div class="col-12 col-lg-3">
             <div class="fw-footer-brand pb-lg-0 pb-3">
-                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/w-icon.png" 
-                     alt="<?php esc_attr_e('براعم النور','wasla'); ?>" class="mb-3" style="width:80px;">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/logo-w.png" alt="<?php esc_attr_e('وصلة','wasla'); ?>" class="mb-3">
                 <p class="fw-footer-text">
                     <?php _e('براعم النور منصة متخصصة في تحفيظ وتعليم القرآن الكريم للأطفال بأسلوب ممتع وتفاعلي يجمع بين الأصالة والتقنية الحديثة.', 'wasla'); ?>
                 </p>
                 <a href="<?php echo esc_url( home_url('/about-us') ); ?>" 
-                   class="btn fw-btn-footer mt-2 fw-bold"><?php _e('اقرأ المزيد', 'wasla'); ?></a>
+                   class="btn fw-btn btn-sub  mt-2"><?php _e('اقرأ المزيد', 'wasla'); ?></a>
             </div>
         </div>
 
