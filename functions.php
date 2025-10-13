@@ -135,3 +135,22 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 // Get Includes
 require_once get_template_directory() . '/inc/fw-wasla-customizer.php';
+
+function pw_increase_post_views($postID) {
+    $views = get_post_meta($postID, 'pw_post_views', true);
+    $views = $views ? $views + 1 : 1;
+    update_post_meta($postID, 'pw_post_views', $views);
+}
+
+function pw_get_post_views($postID) {
+    $views = get_post_meta($postID, 'pw_post_views', true);
+    return $views ? $views : 0;
+}
+
+function pw_track_post_views() {
+    if (is_single()) {
+        global $post;
+        pw_increase_post_views($post->ID);
+    }
+}
+add_action('wp_head', 'pw_track_post_views');
