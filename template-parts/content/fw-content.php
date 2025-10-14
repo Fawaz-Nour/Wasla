@@ -28,12 +28,12 @@
                     <span><?php echo pw_get_post_views(get_the_ID()); ?> مشاهدة</span>
                 </div>
             </div>
-            <div class="fw-single-content shadow-sm rounded-4 bg-white p-3 p-lg-4 mt-2 mt-lg-4">
+            <div class="fw-single-content shadow-sm rounded-3 bg-white p-3 p-lg-4 mt-2 mt-lg-4">
                 <?php the_content(); ?>
             </div>
         </div>
         <div class="col-12 col-lg-3">
-            <div class="fw-single-sidebar mt-2">
+            <div class="fw-sidebar mt-2">
                 <iframe data-form-title="form" height="450" style="border: none; width: 100%" src='https://staging.app.atiraspace.com/api/form/68ed2678f5c05bd39291e8e3/generate'></iframe>
             </div>
         </div>
