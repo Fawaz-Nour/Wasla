@@ -3,19 +3,15 @@
  * Single Post Template
  */
 get_header();
+
 if ( have_posts() ) :
     while ( have_posts() ) : the_post(); ?>
-    
-    <div class="container bg-e pt-5 justify-content-space-between">
-        <?php the_title( '<h1 class="text-center">', '</h1>' ); ?>
-        <hr class="text-third">
-        <?php the_content(); ?>
-    </div>
-
-<?php 
+        <?php get_template_part( 'template-parts/content/fw-content-page', get_post_format() ); ?>
+    <?php
     endwhile;
 else :
-    _e( 'عذرا، لا توجد صفحات تطابق معاييرك.', 'fawaz' ); 
+    get_template_part( 'template-parts/content/fw-content-none', get_post_format() );
 endif;
+
 get_footer();
 ?>

@@ -192,6 +192,7 @@ header {
 .fw-hero {
     padding: 5rem 2rem;
 	background-color: #f0f6ff;
+	overflow-x: hidden !important;
 }
 
 .hero-content h1 {
@@ -395,13 +396,13 @@ header {
     transform: translateX(-3px);
 }
 
-.fw-single-sidebar {
+.fw-sidebar {
     position: sticky;
     top: 100px;
 }
 
-.fw-single-content a {
-    color: var(--fw-sub);
+.fw-single-content a, .fw-page-content a {
+    color: var(--fw-main);
 }
 
 .fw-post-meta {
