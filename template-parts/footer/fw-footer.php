@@ -7,6 +7,7 @@
     $instagram = esc_url( trim( get_theme_mod('fw_instagram') ) );
     $telegram  = esc_url( trim( get_theme_mod('fw_telegram') ) );
     $youtube   = esc_url( trim( get_theme_mod('fw_youtube') ) );
+    $whatsapp_floating   = esc_url( trim( get_theme_mod('fw_floating_whatsapp') ) );
 ?>
 <div class="container">
     <div class="row gy-4">
@@ -122,3 +123,10 @@
         <p class="mb-0">© <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - <?php _e('جميع الحقوق محفوظة','wasla'); ?></p>
     </div>
 </div>
+
+<!-- Floating WhatsApp Button -->                        
+<?php if ( $whatsapp_floating ) : ?>
+<a href="https://wa.me/<?php echo preg_replace('/\D/', '', $whatsapp_floating); ?>" target="_blank" class="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<?php endif; ?>
