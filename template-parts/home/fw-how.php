@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="mt-5 text-center" data-aos="fade-up" data-aos-delay="1000">
-            <a href="./" class="btn fw-btn btn-main btn-lg">سجل الآن</a>
+            <a href="<?php echo esc_url( wp_registration_url() ); ?>" class="btn fw-btn btn-main btn-lg">سجل الآن</a>
         </div>
     </div>
 </section>

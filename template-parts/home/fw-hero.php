@@ -7,8 +7,8 @@
                     <h1>اربط <span class="highlight">مهاراتك</span> بمن يحتاجها</h1>
                     <p>منصة عربية بسيطة تجمع بين مقدمي الخدمات والعملاء. ابدأ في بيع خدماتك أو اعثر على المحترف المناسب لمشروعك</p>
                     <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
-                        <a href="#" class="btn fw-btn btn-main">ابدأ كبائع</a>
-                        <a href="#" class="btn fw-btn btn-sub">تصفح الخدمات</a>
+                        <a href="<?php echo esc_url( wp_registration_url() ); ?>" class="btn fw-btn btn-main">ابدأ كبائع</a>
+                        <a href="<?php echo esc_url( wp_registration_url() ); ?>" class="btn fw-btn btn-sub">تصفح الخدمات</a>
                     </div>
                 </div>
             </div>
@@ -22,3 +22,4 @@
         </div>
     </div>
 </section>
+<script data-atira-form-id="68f0cbde84970cd47fae30b5" data-atira-target="body" src="https://staging.app.atiraspace.com/api/form/68f0cbde84970cd47fae30b5/generate/script"></script>
