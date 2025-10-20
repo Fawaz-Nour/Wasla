@@ -638,6 +638,28 @@ header {
     box-shadow: 0 4px 12px rgba(65, 255, 166, 0.25);
 }
 
+.whatsapp-float {
+	position: fixed;
+	width: 56px;
+	height: 56px;
+	bottom: 1.5rem;
+	right: 1.5rem;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.2s ease;
+	font-size: 30px;
+}
+.whatsapp-float:hover {
+	transform: scale(1.1);
+}
+
 @media (max-width: 991px) {
 	.fw-collapse ul.fw-nav {
 		flex-direction: column !important;
