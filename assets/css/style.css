@@ -36,21 +36,15 @@
 
 .fw-btn {padding: 0.6rem 1.5rem;border-radius: 25px;text-decoration: none;font-weight: 600;transition: all 0.3s;border: none;cursor: pointer;}
 
-.btn-main {background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);color: #fff;}
-.btn-main:hover {transform: translateY(-2px);box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3); color: #ffffff;}
+.btn-main {background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);color: #fff; transition: all 0.3s;}
+.btn-main:hover {transform: translateY(-2px);box-shadow: 0 8px 15px rgba(79, 70, 229, 0.2); color: #ffffff;}
 
-.btn-sub {background: linear-gradient(135deg, #10B981 0%, #059669 100%);color: #fff;}
-.btn-sub:hover {transform: translateY(-2px);box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);color: #fff;}
+.btn-sub {background: linear-gradient(135deg, #10B981 0%, #059669 100%);color: #fff; transition: all 0.3s;}
+.btn-sub:hover {transform: translateY(-2px);box-shadow: 0 8px 15px rgba(16, 185, 129, 0.2);color: #fff;}
 
 .btn-out {color: #4F46E5;border: 2px solid #4F46E5;background: transparent;}
 .btn-out:hover {background: #4F46E5;color: #fff;transform: translateY(-2px);}
 
-/* Custom Scrollbar Styles */
-::-webkit-scrollbar {width: 5px;}
-::-webkit-scrollbar-track {background: #ffffff;}
-::-webkit-scrollbar-thumb {background: linear-gradient(135deg, var(--fw-dark-green) 0%, var(--fw-sub) 100%); transition: background 0.3s ease;}
-::-webkit-scrollbar-thumb:hover {background: linear-gradient(135deg, var(--fw-sub) 0%, var(--fw-dark-green) 100%); box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);}
-::-webkit-scrollbar-corner {background: #ffffff;}
 
 /* Reset */
 * {box-sizing: border-box; padding: 0; margin: 0;}
@@ -227,6 +221,11 @@ header {
 }
 
 /* How section */
+
+.fw-how {
+	background: #f0f6ff;
+}
+
 .fw-how-titl {
 	font-size: 3rem;
 	font-weight: 800;
@@ -307,6 +306,129 @@ header {
 	font-size: 1.05rem;
 	line-height: 1.7;
 	color: #64748b;
+}
+
+/* Services section */
+
+.fw-services {
+	overflow: hidden;
+}
+
+.fw-section-title {
+	font-size: 2.8rem;
+	font-weight: 800;
+	color:var(--fw-main);
+	margin-bottom: 1rem;
+}
+
+.fw-section-subtitle {
+	font-size: 1.2rem;
+	color: #64748b;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.fw-service-card {
+	background: #ffffff;
+	border-radius: 24px;
+	padding: 2.5rem 2rem;
+	text-align: center;
+	box-shadow: 0 8px 20px rgba(79, 70, 229, 0.1);
+	position: relative;
+	overflow: hidden;
+}
+
+.fw-service-card.featured {
+	background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+	transform: scale(1.08);
+	box-shadow: 0 15px 25px rgba(79, 70, 229, 0.25);
+}
+
+.fw-service-card.featured::before {
+	transform: scaleX(1);
+}
+
+.fw-service-card.featured:hover {
+	transform: scale(1.05) translateY(-5px);
+}
+
+.fw-service-card.featured .fw-service-title,
+.fw-service-card.featured .fw-service-description,
+.fw-service-card.featured .fw-popular-badge {
+	color: #ffffff;
+}
+
+.fw-service-icon {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto 1.5rem;
+	background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(124, 58, 237, 0.1));
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	color: var(--fw-main);
+}
+
+.fw-service-card.featured .fw-service-icon {
+	background: rgba(255, 255, 255, 0.2);
+	color: #ffffff;
+}
+
+.fw-popular-badge {
+	display: inline-block;
+	background: var(--fw-sub);
+	color: #ffffff;
+	padding: 0.4rem 1.2rem;
+	border-radius: 50px;
+	font-size: 0.85rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.fw-service-title {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: var(--fw-heading-dark);
+	margin-bottom: 1rem;
+}
+
+.fw-service-description {
+	font-size: 1rem;
+	color: #64748b;
+	line-height: 1.7;
+	margin-bottom: 1.5rem;
+}
+
+.fw-service-features {
+	list-style: none;
+	margin-bottom: 1.5rem;
+	text-align: right;
+}
+
+.fw-service-features li {
+	padding: 0.5rem 0;
+	color: #64748b;
+	font-size: 0.95rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.fw-service-card.featured .fw-service-features li {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.fw-service-features li i {
+	color: var(--fw-sub);
+	font-size: 0.9rem;
+}
+
+.fw-service-card.featured .fw-service-features li i {
+	color: #ffffff;
 }
 
 /* Archive */
@@ -679,6 +801,32 @@ header {
 	.fw-collapse ul.fw-nav li a:hover {
 		color: var(--fw-main) !important;
 	}
+
+	.fw-service-card.featured {
+		transform: scale(1);
+	}
+
+	.fw-service-card.featured:hover {
+		transform: scale(1.02) translateY(-5px);
+	}
+
+	.fw-section-title {
+		font-size: 2.2rem;
+	}
+
+	[data-aos="fade-left"],
+    [data-aos="fade-right"],
+	[data-aos="fade-left"] {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    [data-aos="fade-left"].aos-animate,
+    [data-aos="fade-right"].aos-animate,
+	[data-aos="fade-left"].aos-animate {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media(max-width: 768px) {
@@ -700,6 +848,18 @@ header {
     .fw-archive .fw-card .fw-img {
         height: 200px;
     }
+
+	.fw-section-title {
+		font-size: 1.8rem;
+	}
+
+	.fw-section-subtitle {
+		font-size: 1rem;
+	}
+
+	.fw-service-card {
+		padding: 2rem 1.5rem;
+	}
 }
 
 @media (max-width: 576px) {

@@ -1,5 +1,5 @@
 <!-- How Section -->
-<section class="fw-how py-5">
+<section class="fw-how py-5 mb-lg-5 mb-3">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
             <h2 class="fw-how-titl mb-3"><?php echo __('كيف تعمل المنصة'); ?></h2>

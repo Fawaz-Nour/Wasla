@@ -22,4 +22,3 @@
         </div>
     </div>
 </section>
-<script data-atira-form-id="68f0cbde84970cd47fae30b5" data-atira-target="body" src="https://staging.app.atiraspace.com/api/form/68f0cbde84970cd47fae30b5/generate/script"></script>
