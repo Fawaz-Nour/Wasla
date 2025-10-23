@@ -8,6 +8,7 @@ get_header();
 <!--Main-->
 <main>
     <?php get_template_part('template-parts/home/fw-hero') ?>
+    <?php get_template_part('template-parts/home/fw-services') ?>
     <?php get_template_part('template-parts/home/fw-how') ?>
 </main>
 <!--/Main-->
