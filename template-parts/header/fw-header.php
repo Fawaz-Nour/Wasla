@@ -34,11 +34,8 @@
 				</div>
 
 				<div class="fw-header-buttons d-none d-lg-block">
-					<a class="btn fw-btn btn-out mx-2" href="<?php echo esc_url( wp_login_url() ); ?>">
-						<i class="fa-solid fa-arrow-right-to-bracket me-1"></i> <?php _e('تسجيل الدخول', 'wasla'); ?>
-					</a>
-					<a class="btn fw-btn btn-main" href="<?php echo esc_url( wp_registration_url() ); ?>">
-						<i class="fa-solid fa-user-plus me-1"></i> <?php _e('إنشاء حساب', 'wasla'); ?>
+					<a class="btn fw-btn btn-sub" href="<?php echo esc_url( wp_registration_url() ); ?>">
+						<i class="fa-brands fa-whatsapp me-1 fs-5"></i> <?php _e('استفسر الآن', 'wasla'); ?>
 					</a>
 				</div>
 
@@ -74,12 +71,9 @@
             ) );
             ?>
 			<hr>
-            <a class="btn fw-btn btn-out w-100 mb-2" href="<?php echo esc_url( wp_login_url() ); ?>">
-                <i class="fa-solid fa-arrow-right-to-bracket me-1"></i> <?php _e('تسجيل الدخول', 'wasla'); ?>
-            </a>
-            <a class="btn fw-btn btn-main w-100" href="<?php echo esc_url( wp_registration_url() ); ?>">
-                <i class="fa-solid fa-user-plus me-1"></i> <?php _e('إنشاء حساب', 'wasla'); ?>
-            </a>
+			<a class="btn fw-btn btn-sub" href="<?php echo esc_url( wp_registration_url() ); ?>">
+				<i class="fa-brands fa-whatsapp me-1 fs-5"></i> <?php _e('استفسر الآن', 'wasla'); ?>
+			</a>
 		</div>
 	</div>
 </header>
