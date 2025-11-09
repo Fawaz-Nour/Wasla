@@ -34,6 +34,9 @@
 .text-main {color: var(--fw-main);}
 .text-sub {color: var(--fw-sub);}
 
+.bg-main {background-color: var(--fw-main);}
+.bg-sub {background-color: var(--fw-sub);}
+
 .fw-btn {padding: 0.6rem 1.5rem;border-radius: 25px;text-decoration: none;font-weight: 600;transition: all 0.3s;border: none;cursor: pointer;}
 
 .btn-main {background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);color: #fff; transition: all 0.3s;}
@@ -181,7 +184,9 @@ header {
 [dir="rtl"] #fwOffcanvasMenu .fw-offcanvas-nav li a {
 	text-align: right;
 }
-
+.top-header a {
+	direction: ltr !important;
+}
 
 /* Hero Section */
 .fw-hero {
